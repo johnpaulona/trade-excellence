@@ -1,0 +1,5 @@
+{
+  "layout": "milestone-layout.njk",
+  "permalink": "/milestones/{{ title | slug }}/index.html",
+  "tags": ["milestone"]
+}

@@ -1,0 +1,36 @@
+---
+layout: base.njk
+navTransparent: true
+---
+{% block content %}
+<div class="page-header about whoweare">
+  <div class="full-container whoweare">
+    <div class="section-tittle-block page-header whoweare">
+      <h1 class="section-tittle big-transparent">Milestones</h1>
+      <div class="milestone-deck">{{ category | upper }}</div>
+      <div class="sub-tittle milestone-title"><strong>{{ title }}</strong></div>
+      <p class="milestone-lead">{{ lead }}</p>
+
+      {% if image %}
+      <div class="milestone-img-div" style="background-image: url('/assets/images/{{ image }}'); background-size: cover; background-position: center; min-height: 400px; margin: 24px 0;"></div>
+      {% endif %}
+
+      {% if video %}
+      <div class="milestone-img-div" style="margin: 24px 0;">
+        <video autoplay loop muted playsinline style="width:100%; display:block;">
+          <source src="/assets/videos/{{ video }}" type="video/mp4">
+        </video>
+      </div>
+      {% endif %}
+
+      {% if youtube %}
+      <div style="position:relative; padding-top:56.25%; margin: 24px 0;">
+        <iframe src="https://www.youtube.com/embed/{{ youtube }}?rel=0&controls=1" frameborder="0" style="position:absolute;left:0;top:0;width:100%;height:100%;" allow="autoplay; encrypted-media" allowfullscreen title="{{ title }}"></iframe>
+      </div>
+      {% endif %}
+
+      <div class="milestone-text">{{ content | safe }}</div>
+    </div>
+  </div>
+</div>
+{% endblock %}
