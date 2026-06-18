@@ -265,7 +265,8 @@
   <script src="../js/webflow.js" type="text/javascript"></script>
   <script src="https://web.goodweb.host/goodwebhost-country.js"></script>
   <script>$(document).ready(function() {
-  $('#allcountries').replaceWith(countries); 
+  $('#allcountries').replaceWith(countries);
 });</script>
+<script>(function(){var p=new URLSearchParams(location.search),s=p.get('submitted')==='1',e=p.get('form-error')==='1';if(!s&&!e)return;document.querySelectorAll('form[action*="te-forms"]').forEach(function(f){if(s){f.style.display='none';var d=f.parentNode.querySelector('.w-form-done');if(d)d.style.display='block';}else{var r=f.parentNode.querySelector('.w-form-fail');if(r)r.style.display='block';}});})();</script>
 </body>
 </html>
