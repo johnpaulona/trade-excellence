@@ -32,7 +32,10 @@
     .milestone-text a:hover, .milestone-lead a:hover { color: #e08800; }
     .milestone-img-div { height: 300px; }
     @media (min-width: 768px) { .milestone-img-div { height: 600px; } }
-    @media (max-width: 767px) { .sbf-slide { background-size: 100% auto !important; background-repeat: no-repeat !important; background-position: top center !important; } }
+    @media (max-width: 767px) {
+      #sbf-slider { height: auto !important; aspect-ratio: 16/9; }
+      .sbf-slide { background-size: cover !important; background-position: center !important; }
+    }
   </style>
 </head>
 <body class="body">
