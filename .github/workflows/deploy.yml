@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - staging
 
 jobs:
   deploy:
@@ -16,4 +17,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ca5641045b8755646578bd3d12d979d1
-          command: pages deploy dist --project-name=trade-excellence --branch=master
+          command: pages deploy dist --project-name=trade-excellence --branch=${{ github.ref_name }}
