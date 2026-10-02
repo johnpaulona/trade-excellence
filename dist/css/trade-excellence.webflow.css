@@ -6492,6 +6492,18 @@ figure {
   padding-right: 0%;
 }
 
+.div-item.sbf-mou {
+  background-image: url('../images/sbf-mou-signing.jpg');
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  height: 270px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0%;
+}
+
 .div-item.event-img3 {
   background-image: url('../images/1730432238467.jpg');
   width: 100%;
