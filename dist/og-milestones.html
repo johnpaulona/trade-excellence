@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1200px; height: 630px; overflow: hidden; font-family: 'Arial', sans-serif; background: #0a0f1e; }
+  .card {
+    width: 1200px; height: 630px;
+    background: #0a0f1e;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 80px 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .accent-bar {
+    position: absolute; top: 0; left: 0;
+    width: 8px; height: 100%;
+    background: #ee8322;
+  }
+  .top-bar {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 6px;
+    background: #ee8322;
+  }
+  .bg-circle {
+    position: absolute; right: -80px; bottom: -80px;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    border: 60px solid rgba(238,131,34,0.08);
+  }
+  .bg-circle2 {
+    position: absolute; right: 80px; top: -120px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    border: 40px solid rgba(238,131,34,0.05);
+  }
+  .logo-area {
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 48px;
+  }
+  .logo-img { height: 48px; }
+  .eyebrow {
+    font-size: 13px; letter-spacing: 4px; text-transform: uppercase;
+    color: #ee8322; font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .headline {
+    font-size: 72px; font-weight: 900; line-height: 1.05;
+    color: #ffffff;
+    letter-spacing: -1px;
+  }
+  .headline span { color: #ee8322; }
+  .sub {
+    font-size: 20px; color: rgba(255,255,255,0.55);
+    margin-top: 20px; max-width: 600px; line-height: 1.5;
+  }
+  .domain {
+    position: absolute; bottom: 40px; right: 100px;
+    font-size: 13px; color: rgba(255,255,255,0.3);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div>
+  <div class="accent-bar"></div>
+  <div class="bg-circle"></div>
+  <div class="bg-circle2"></div>
+  <div class="logo-area">
+    <img class="logo-img" src="images/TE-final-logo-p-500.png" alt="Trade Excellence">
+  </div>
+  <div class="eyebrow">Milestones</div>
+  <div class="headline">Shaping the future<br>of <span>global trade.</span></div>
+  <div class="sub">Key events, publications, and achievements advancing export controls and international trade compliance.</div>
+  <div class="domain">tradeexcellence.org</div>
+</div>
+</body>
+</html>
